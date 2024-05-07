@@ -75,7 +75,7 @@ i: La variable correspondiente tiene tipo entero
 d: La variable correspondiente tiene tipo doble
 s:	La variable correspondiente tiene tipo cadena
 */		
-		mysqli_stmt_bind_param($stmt, "sssssi", $marca, $modelo, $color, $refmotor, $matricula, $id);
+		mysqli_stmt_bind_param($stmt, "sssss", $marca, $modelo, $color, $refmotor, $matricula);
 //Ejecuta una consulta preparada		
 		mysqli_stmt_execute( $stmt);
 //Libera la memoria donde se almacenó el resultado		
