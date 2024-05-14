@@ -20,7 +20,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM cars ORDER BY id DESC");
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<title>Panel de control</title>
 	<!--bootstrap-->
-	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	-->	
@@ -41,7 +41,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM cars ORDER BY id DESC");
 		<li><a href="add.html">Alta</a></li>
 	</ul>
 	<h2>Listado de Coches</h2>
-	<table border="1">
+	<table border="1" class="table table-striped">
 	<thead>
 		<tr>
 			<th>Marca</th>
